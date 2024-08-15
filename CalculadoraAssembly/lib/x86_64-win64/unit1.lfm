@@ -1,0 +1,403 @@
+object Form1: TForm1
+  Left = 678
+  Height = 504
+  Top = 163
+  Width = 435
+  BorderStyle = bsToolWindow
+  Caption = 'Calculadora Assembly'
+  ClientHeight = 504
+  ClientWidth = 435
+  DesignTimePPI = 120
+  LCLVersion = '2.2.6.0'
+  object Button1: TButton
+    Left = 145
+    Height = 54
+    Top = 354
+    Width = 74
+    Caption = '1'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 218
+    Height = 54
+    Top = 354
+    Width = 74
+    Caption = '2'
+    Color = clHighlight
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Button3: TButton
+    Left = 290
+    Height = 54
+    Top = 354
+    Width = 74
+    Caption = '3'
+    OnClick = Button3Click
+    TabOrder = 2
+  end
+  object Button4: TButton
+    Left = 145
+    Height = 54
+    Top = 301
+    Width = 74
+    Caption = '4'
+    OnClick = Button4Click
+    TabOrder = 3
+  end
+  object Button5: TButton
+    Left = 218
+    Height = 54
+    Top = 301
+    Width = 74
+    Caption = '5'
+    OnClick = Button5Click
+    TabOrder = 4
+  end
+  object Button6: TButton
+    Left = 290
+    Height = 54
+    Top = 301
+    Width = 74
+    Caption = '6'
+    OnClick = Button6Click
+    TabOrder = 5
+  end
+  object Button7: TButton
+    Left = 145
+    Height = 54
+    Top = 249
+    Width = 74
+    Caption = '7'
+    OnClick = Button7Click
+    TabOrder = 6
+  end
+  object Button8: TButton
+    Left = 218
+    Height = 54
+    Top = 249
+    Width = 74
+    Caption = '8'
+    OnClick = Button8Click
+    TabOrder = 7
+  end
+  object Button9: TButton
+    Left = 290
+    Height = 54
+    Top = 249
+    Width = 74
+    Caption = '9'
+    OnClick = Button9Click
+    TabOrder = 8
+  end
+  object ButtonV: TButton
+    Left = 145
+    Height = 54
+    Top = 406
+    Width = 74
+    Caption = ','
+    OnClick = ButtonVClick
+    TabOrder = 9
+  end
+  object Button0: TButton
+    Left = 218
+    Height = 54
+    Top = 406
+    Width = 74
+    Caption = '0'
+    OnClick = Button0Click
+    TabOrder = 10
+  end
+  object ButtonSub: TButton
+    Left = 362
+    Height = 54
+    Top = 301
+    Width = 74
+    Caption = '-'
+    OnClick = ButtonSubClick
+    TabOrder = 11
+  end
+  object ButtonAdd: TButton
+    Left = 362
+    Height = 54
+    Top = 354
+    Width = 74
+    Caption = '+'
+    OnClick = ButtonAddClick
+    TabOrder = 12
+  end
+  object ButtonEqual: TButton
+    Left = 362
+    Height = 54
+    Top = 406
+    Width = 74
+    Caption = '='
+    OnClick = ButtonEqualClick
+    TabOrder = 13
+  end
+  object EditVisor: TEdit
+    Left = 0
+    Height = 62
+    Top = 0
+    Width = 436
+    Color = clWhite
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -40
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentBidiMode = False
+    ParentFont = False
+    TabOrder = 14
+  end
+  object ButtonAC: TButton
+    Left = 145
+    Height = 54
+    Top = 140
+    Width = 148
+    Caption = 'C'
+    OnClick = ButtonACClick
+    TabOrder = 15
+  end
+  object ButtonDiv: TButton
+    Left = 362
+    Height = 54
+    Top = 196
+    Width = 74
+    Caption = '÷'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonDivClick
+    ParentFont = False
+    TabOrder = 16
+  end
+  object ButtonMul: TButton
+    Left = 362
+    Height = 54
+    Top = 249
+    Width = 74
+    Caption = '×'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonMulClick
+    ParentFont = False
+    TabOrder = 17
+  end
+  object ButtonPi: TButton
+    Left = 145
+    Height = 54
+    Top = 196
+    Width = 74
+    Caption = 'π'
+    OnClick = ButtonPiClick
+    TabOrder = 18
+  end
+  object ButtonBack: TButton
+    Left = 291
+    Height = 54
+    Top = 140
+    Width = 145
+    Caption = '↩'
+    OnClick = ButtonBackClick
+    TabOrder = 19
+  end
+  object ButtonSin: TButton
+    Left = 72
+    Height = 54
+    Top = 196
+    Width = 74
+    Caption = 'sin'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonSinClick
+    ParentFont = False
+    TabOrder = 20
+  end
+  object ButtonCos: TButton
+    Left = 72
+    Height = 54
+    Top = 249
+    Width = 74
+    Caption = 'cos'
+    OnClick = ButtonCosClick
+    TabOrder = 21
+  end
+  object ButtonTan: TButton
+    Left = 72
+    Height = 54
+    Top = 301
+    Width = 74
+    Caption = 'tan'
+    OnClick = ButtonTanClick
+    TabOrder = 22
+  end
+  object ButtonRoot: TButton
+    Left = 72
+    Height = 54
+    Top = 354
+    Width = 74
+    Caption = '√x'
+    OnClick = ButtonRootFunction
+    TabOrder = 23
+  end
+  object ButtonPow2: TButton
+    Left = 0
+    Height = 54
+    Top = 354
+    Width = 74
+    Caption = 'x²'
+    OnClick = ButtonPow2Function
+    TabOrder = 24
+  end
+  object ButtonPow: TButton
+    Left = 0
+    Height = 54
+    Top = 406
+    Width = 74
+    Caption = 'x^y'
+    OnClick = ButtonPowFunction
+    TabOrder = 25
+  end
+  object Button13: TButton
+    Left = 0
+    Height = 54
+    Top = 301
+    Width = 74
+    Caption = 'log'
+    OnClick = Button13Click
+    TabOrder = 26
+  end
+  object Button14: TButton
+    Left = 0
+    Height = 54
+    Top = 249
+    Width = 74
+    Caption = 'ln'
+    OnClick = Button14Click
+    TabOrder = 27
+  end
+  object Button15: TButton
+    Left = 0
+    Height = 54
+    Top = 196
+    Width = 74
+    Caption = 'n!'
+    OnClick = Button15Click
+    TabOrder = 28
+  end
+  object ButtonLP: TButton
+    Left = 0
+    Height = 54
+    Top = 140
+    Width = 74
+    Caption = '('
+    OnClick = ButtonLPClick
+    TabOrder = 29
+  end
+  object ButtonRP: TButton
+    Left = 72
+    Height = 54
+    Top = 140
+    Width = 74
+    Caption = ')'
+    OnClick = ButtonRPClick
+    TabOrder = 30
+  end
+  object Button18: TButton
+    Left = 72
+    Height = 54
+    Top = 406
+    Width = 74
+    Caption = 'y√x'
+    OnClick = Button18Click
+    TabOrder = 31
+  end
+  object Button19: TButton
+    Left = 290
+    Height = 54
+    Top = 406
+    Width = 74
+    Caption = '+/-'
+    OnClick = Button19Click
+    TabOrder = 32
+  end
+  object Button20: TButton
+    Left = 218
+    Height = 54
+    Top = 196
+    Width = 74
+    Caption = 'e'
+    OnClick = Button20Click
+    TabOrder = 33
+  end
+  object Button21: TButton
+    Left = 290
+    Height = 54
+    Top = 196
+    Width = 74
+    Caption = 'e^x'
+    OnClick = Button21Click
+    TabOrder = 34
+  end
+  object CheckBox1: TCheckBox
+    Left = 10
+    Height = 29
+    Top = 90
+    Width = 49
+    Caption = 'Inv'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = CheckBox1Change
+    ParentFont = False
+    TabOrder = 35
+  end
+  object RadioButton1: TRadioButton
+    Left = 200
+    Height = 29
+    Top = 90
+    Width = 73
+    Caption = 'Graus'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 36
+  end
+  object RadioButton2: TRadioButton
+    Left = 310
+    Height = 29
+    Top = 90
+    Width = 101
+    Caption = 'Radianos'
+    Checked = True
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 37
+    TabStop = True
+  end
+  object CheckBoxPolish: TCheckBox
+    Left = 80
+    Height = 29
+    Top = 90
+    Width = 101
+    Caption = 'Polonesa'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 38
+  end
+end
